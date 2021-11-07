@@ -9,7 +9,7 @@ int main()
 {
  IODIR0 = 0XFFFFFFFF;
 
- for(int k=0; k<5; k++)
+ for(k=0; k<5; k++)
  { 
  IOPIN0=0X00000240;
  delay();
