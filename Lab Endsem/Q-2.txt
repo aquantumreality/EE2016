@@ -1,0 +1,201 @@
+This is an exercise to test your understanding of an assembly code written for a 7 segment display control.
+
+Assume that the values stored in the memory locations are as shown below.
+
+Memory Location
+	
+
+ Value Stored
+	
+
+Decimal value stored
+	
+
+ASCII value
+
+0x2000
+	
+
+0x7E
+	
+
+0
+	
+
+0x30
+
+0x2001
+	
+
+0x30
+	
+
+1
+	
+
+0x31
+
+0x2002
+	
+
+0x6D
+	
+
+2
+	
+
+0x32
+
+0x2003
+	
+
+0x79
+	
+
+3
+	
+
+0x33
+
+0x2004
+	
+
+0x33
+	
+
+4
+	
+
+0x34
+
+0x2005
+	
+
+0x5B
+	
+
+5
+	
+
+0x35
+
+0x2006
+	
+
+0x5F
+	
+
+6
+	
+
+0x36
+
+0x2007
+	
+
+0x70
+	
+
+7
+	
+
+0x37
+
+0x2008
+	
+
+0x7F
+	
+
+8
+	
+
+0x38
+
+0x2009
+	
+
+0x7B
+	
+
+9
+	
+
+0x39
+
+Assume that the key pressed is ‘6’. Whenever any key pressed, the corresponding ASCII code is stored in the location 0x0800 (which is conventional in designs). 
+
+Go through the following code and match the questions provided with their correct solutions. 
+
+1             START:
+
+2                           LDI         ZH, 0x08
+
+3                           LDI         ZL, 0x00                           
+
+4
+
+5                           LPM       R2, Z                                               
+
+6                           LDI         R20, 0xF0
+
+7                           MOV      R3, R20
+
+8                           AND       R3, R2                                     
+
+9                           LDI         R21, 0x0F
+
+10                          AND       R2, R21                  
+
+11                          LDI         R22, 0x30
+
+12                          MOV      R4, R22                           
+
+13                          CP          R3, R4  
+
+14                         BREQ    DISP
+
+ 15                        LDI         R23, 0x0A
+
+ 16                        MOV      R2, R23                             
+
+ 17    DISP:          LDI         ZH, 0x20
+
+ 18                        LDI         ZL, 0x00
+
+ 19                        MOV      ZL, R2
+
+ 20                        LPM       R5, Z
+
+ 21                        LDI         XH, 0x40
+
+ 22                        LDI         XL, 0x30     
+
+ 23                        ST          X, R5                  
+
+ 24                        RJMP    START
+
+What is the value of the Z register, immediately after line #3 gets executed?
+	
+Answer 1
+
+What is the value of Zero Flag after line 13 is executed?
+	
+Answer 2
+
+What is the purpose of the instruction: MOV ZL, R2 in line 19?
+
+	
+Answer 3
+
+What is the value of R2 after the AND instruction in line 10 ?
+	
+Answer 4
+
+What is the value in R3 immediately after the AND instruction (line 8)?
+	
+Answer 5
+
+What is the value of PC after the execution of line 14?
+
+Answer 6
