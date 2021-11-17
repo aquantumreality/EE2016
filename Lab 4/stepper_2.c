@@ -5,11 +5,11 @@ void delay()
  for(i=0; i<0xFF;i++);
  for(j=0; j<0XFF;j++);
 }
-int main(void)
+int main()
 {
  IODIR0 = 0XFFFFFFFF;
 
- for(int k=0; k<5; k++)
+ for(k=0; k<5; k++)
  { 
  IOPIN0=0X00000240;
  delay();
