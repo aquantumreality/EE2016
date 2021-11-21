@@ -1,5 +1,6 @@
 # EE2016 Fall 2021
 
+This repository contains AVR assembly language, ARM assembly language programs and C programs written for AVR ATMega8 microcontroller and ARM LPC2378 microprocessors respectively as a part of the lab work for EE2016: Microprocessors, Jul-Nov 2021. 
 NOTE: You can use these codes for reference/learning but even in case of the same question, please DO NOT submit the same code as given in this repo. Thanks!
 
 **Lab**
