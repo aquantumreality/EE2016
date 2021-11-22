@@ -1,4 +1,4 @@
-# EE2016 Fall 2021
+# EE2016 
 
 This repository contains AVR, ARM assembly and C programs written for AVR ATMega8 microcontroller and ARM LPC2378 respectively as a part of the lab work for EE2016: Microprocessors, Jul-Nov 2021.  
 
