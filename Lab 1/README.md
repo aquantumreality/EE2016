@@ -13,4 +13,4 @@ Simple computations like addition of two 8-bit and 16-bit numbers, multiplicatio
     Given two 8-bit binary words (byte), compute the product and store it in register(s).
    
   - #### [Problem 4 (Largest of number given): ](https://github.com/aquantumreality/EE2016/blob/main/Lab%201/Expt1_P4.asm)
-    Given a finite set of binary words, load them from memory, identify the largest in the given set, and store this largest number in SRAM. 
+    Given a finite set of binary words, load them from memory, identify the largest in the given set, and store this largest number in SRAM. I, and [Aditya](https://github.com/berserank) together worked on the solution to this. 
