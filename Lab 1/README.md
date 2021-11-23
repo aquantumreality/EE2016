@@ -13,4 +13,4 @@ Simple computations like addition of two 8-bit and 16-bit numbers, multiplicatio
     Given two 8-bit binary words (byte), compute the product and store it in register(s).
    
   - #### Problem 4 (Largest of number given):
-    Given a finite set of binary words, load them- from memory, identify the largest in the given set, and store this largest number in 
+    Given a finite set of binary words, load them from memory, identify the largest in the given set, and store this largest number in 
